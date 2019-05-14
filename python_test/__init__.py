@@ -202,6 +202,18 @@ if __name__ == '__main__':
     a = "Sat Mar 28 22:24:24 2016"
     print time.mktime(time.strptime(a,"%a %b %d %H:%M:%S %Y"))
 
+    #try catch 捕获
+    try:
+        raise IOError,"ioerror"
+        fh = open("testfile","w")
+        fh.write("这是一个测试文件,用于测试异常!!")
+    except IOError:
+        print "Error:没有找到相应"
+    else:
+        print "内容写入成功"
+    finally:
+        print "哈哈我是finally，必须执行"
+
 
 
 
