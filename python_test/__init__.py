@@ -1,6 +1,6 @@
 # !/usr/bin/python
 # -*- coding: UTF-8 -*-
-
+import time
 if __name__ == '__main__':
     # print 换行与否演示
     print "换行hello"
@@ -187,6 +187,23 @@ if __name__ == '__main__':
 
     unicodestr = u'Hello\u0020World!'
     print  unicodestr
+
+    #python 时间和日期
+    ticks = time.time()
+    print "当前的时间:",ticks
+
+    localtime = time.localtime(time.time())
+    print "本地时间为:",localtime
+
+    #格式化时间：
+    print time.strftime("%Y-%m-%d %H:%M:%S",time.localtime())
+
+    #将格式字符串转换成时间戳
+    a = "Sat Mar 28 22:24:24 2016"
+    print time.mktime(time.strptime(a,"%a %b %d %H:%M:%S %Y"))
+
+
+
 
 
 
