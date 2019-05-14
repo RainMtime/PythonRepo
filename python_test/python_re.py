@@ -53,3 +53,8 @@ print it
 # 正则匹配，书写相关逻辑，务必参考对应手册进行书写。
 # https://www.runoob.com/python/python-reg-expressions.html
 
+# python 可以做的其他额外事情
+# python socket 编程，可以非常快速及方便的实现
+# python mySql 可以非常便捷的操作数据库相关
+# python SMTP 可以
+
